@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subodh Kumar - Cyber Security Associate</title>
+    <meta name="description" content="Welcome to Subodh's profile.Cyber Security Associate, Web Developer, and Java Developer. Connect with me!">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Abinash Mishra - Cyber Security Associate">
+    <meta property="og:description" content="Welcome to Abinash Mishra's profile. Connect with me to explore more.">
+    <meta property="og:image" content="Profile.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abinash Mishra - Cyber Security Associate ">
+    <meta name="twitter:description" content="Welcome to my profile! Connect with me">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+    <div class="container">
+        <header>
+            <h1>Welcome to My World</h1>
+            <p>I am <strong>Subodh</strong>, a Cyber Security Associate.</p>
+        </header>
+        <section class="section about">
+            <h2>About Me</h2>
+            <p>Hello! I am Subodh, and here is a little Info about me.</p>
+            <p>Hello! I am Subodh, a passionate Tech Enthusiast with a love for Web Development, MERNstack Development, and Database Management. I enjoy solving complex problems and building innovative solutions that make a difference. Let's connect and create something amazing together!</p>
+            <img src="Profile.jpeg" alt="Subodh" class="profile-pic">
+        </section>
+        <section class="section contact">
+            <h2>Contact Information</h2>
+            <p>Let's connect!</p>
+            <p><a href="mailto:sstm476@gmail.com" class="btn">Send me an email</a>  | <a href="https://www.linkedin.com/in/subodh-kumar-subo" class="btn">LinkedIn</a></p>
+        </section>
+        <section class="section skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Cyber Security Associate</li>
+                <li>Web Development</li>
+                <li>Java Development</li>
+                <li>Database Management</li>
+            </ul>
+        </section>
+        <section class="section portfolio">
+            <h2>Portfolio</h2>
+            <p>Take a look at some of my works.</p>
+            <p><a href="Project1.html" class="btn">Project 1</a> | <a href="https://drive.google.com/file/d/1vMT4U43mCjNkJFn_6Ou5PeVhhwdKu14a/view?usp=drive_link" class="btn">Resume</a></p>
+        </section>
+        <section class="section contact-form">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 Subodh. Built by Self.</p>
+        </footer>
+    </div>
+</center>
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+        });
+    </script>
+</body>
+</html>

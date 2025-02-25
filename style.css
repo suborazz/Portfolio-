@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #6a11cb;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.about .profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+.skills {
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6a11cb;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills li {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.skills li:hover {
+    background: #2575fc;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+
+.contact .btn {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact .btn:hover {
+    background: #2575fc;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6a11cb;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+.contact-form button {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2575fc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6a11cb;
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background: #2575fc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* About Me Section */
+.about {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffffff, #f4f4f9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #6a11cb;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+.about .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #6a11cb;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+}
+
+.about .profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 15px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .about .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+}
